@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!-- https://github.com/spring-projects/spring-boot/blob/v1.4.2.RELEASE/spring-boot/src/main/resources/org/springframework/boot/logging/logback/defaults.xml -->
+    <include resource="org/springframework/boot/logging/logback/defaults.xml"/>
+
+    <property name="APP_NAME" value="tac"/>
+    <property name="LOG_PATH" value="${user.home}/${APP_NAME}/logs"/>
+    <property name="LOG_FILE" value="${LOG_PATH}/application.log"/>
+    <property name="TAC_USER_LOG_FILE" value="${LOG_PATH}/tac-user.log"/>
+
+    <appender name="APPLICATION"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_FILE}</file>
+        <encoder>
+            <pattern>${FILE_LOG_PATTERN}</pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_FILE}.%d{yyyy-MM-dd}</fileNamePattern>
+            <maxHistory>60</maxHistory>
+        </rollingPolicy>
+    </appender>
+
+
+    <appender name="TAC-USER-LOG"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${TAC_USER_LOG_FILE}</file>
+        <encoder>
+            <pattern>%m%n</pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${TAC_USER_LOG_FILE}.%d{yyyy-MM-dd}</fileNamePattern>
+            <maxHistory>60</maxHistory>
+        </rollingPolicy>
+    </appender>
+
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${CONSOLE_LOG_PATTERN}</pattern>
+            <charset>utf8</charset>
+        </encoder>
+    </appender>
+
+    <springProfile name="debug">
+        <logger name="com.alibaba.tac" level="DEBUG" additivity="false">
+            <appender-ref ref="APPLICATION"/>
+            <appender-ref ref="CONSOLE"/>
+        </logger>
+
+        <root level="DEBUG">
+            <appender-ref ref="APPLICATION"/>
+            <appender-ref ref="CONSOLE"/>
+        </root>
+    </springProfile>
+
+    <springProfile name="!debug">
+        <logger name="com.alibaba.tac" level="INFO" additivity="false">
+            <appender-ref ref="APPLICATION"/>
+            <appender-ref ref="CONSOLE"/>
+
+        </logger>
+        <root level="INFO">
+            <appender-ref ref="APPLICATION"/>
+            <appender-ref ref="CONSOLE"/>
+        </root>
+    </springProfile>
+
+    <logger name="TAC-USER-LOG" level="INFO" additivity="false">
+        <appender-ref ref="TAC-USER-LOG"/>
+    </logger>
+
+    <logger name="org.thymeleaf" level="ERROR" additivity="false">
+        <appender-ref ref="APPLICATION"/>
+    </logger>
+
+
+    <logger name="org.springframework" level="ERROR" additivity="false">
+        <appender-ref ref="APPLICATION"/>
+    </logger>
+
+
+</configuration>
