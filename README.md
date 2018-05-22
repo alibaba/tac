@@ -1,9 +1,5 @@
 # [中文文档](README-ch.md)
 
-# TAC
-
-## What is TAC ？
-
 * [TAC](#tac)
   * [What is TAC ？](#what-is-tac-%EF%BC%9F)
   * [Features](#features)
@@ -20,6 +16,12 @@
     * [Online-Publish](#online-publish)
   * [The start params config](#the-start-params-config)
   * [Add your own datasource](#add-your-own-datasource)
+  
+# TAC
+
+## What is TAC ？
+
++ The TAC (Tiny API Cloud) is a server-side solution with tangram. Of course, it also supports the use of secession from tangram; TAC is not a platform, nor a framework, but a development model.
 
 ## Features
 
@@ -170,3 +172,5 @@ curl  http://localhost:8001/api/tac/execute/helloworld -s|json
 ## [The start params config](/docs/configs.md)
 
 ## [Add your own datasource](/docs/custom_data_source.md)
+
+## [Use with gitlab](/docs/gitlab.md)
