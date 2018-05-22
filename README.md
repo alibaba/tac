@@ -69,7 +69,7 @@ java -jar tac-container.jar
 java -jar tac-console.jar --admin
 ```
 
-* 成功后可打开控制台
+* open console when succes
 
 ```
 http://localhost:7001/#/tacMs/list
