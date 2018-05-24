@@ -5,8 +5,6 @@ import com.alibaba.tac.sdk.domain.Context;
 import com.alibaba.tac.sdk.factory.TacInfrasFactory;
 import com.alibaba.tac.sdk.handler.TacHandler;
 import com.alibaba.tac.sdk.infrastracture.TacLogger;
-import com.tmall.itemcenter.ItemDO;
-import com.tmall.itemcenter.TmallItemService;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -21,10 +19,6 @@ public class HelloWorldTac implements TacHandler<Object> {
      */
     private TacLogger tacLogger = TacInfrasFactory.getLogger();
 
-    /**
-     * get the item service
-     */
-    private TmallItemService tmallItemService = TacInfrasFactory.getServiceBean(TmallItemService.class);
 
     /**
      * implement a class which implements TacHandler interface
@@ -46,9 +40,8 @@ public class HelloWorldTac implements TacHandler<Object> {
         data.put("clientVersion", "7.0.2");
         data.put("userName", "tac-userName");
 
-        ItemDO item = tmallItemService.getItem(123L);
 
-        data.put("item", item);
+
         return TacResult.newResult(data);
     }
 }
