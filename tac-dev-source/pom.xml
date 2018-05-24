@@ -4,7 +4,6 @@
         <artifactId>tac</artifactId>
         <groupId>com.alibaba</groupId>
         <version>0.0.1</version>
-        <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 

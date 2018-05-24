@@ -32,7 +32,7 @@ public class HelloWorldTac implements TacHandler<Object> {
     public TacResult<Object> execute(Context context) throws Exception {
 
         // the code
-        tacLogger.info("Hello World");
+        tacLogger.info("Hello World22");
 
         Map<String, Object> data = new HashMap<>();
         data.put("name", "hellotac");

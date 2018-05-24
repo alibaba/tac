@@ -15,7 +15,6 @@
         <module>tac-container</module>
         <module>tac-engine</module>
         <module>tac-infrastructure</module>
-        <module>tac-dev-source</module>
         <module>tac-custom-datasource</module>
     </modules>
 
