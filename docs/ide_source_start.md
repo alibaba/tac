@@ -13,7 +13,7 @@ git clone git@github.com:alibaba/tac.git
 * 项目通过 springboot 编写 依赖 jdk1.8
 * 使用了 lombok 包，idea 需要安装 lombok 插件；
 
-![undefined](/imgs/sourcestart/1527213111970-6a1b5031-63ef-4082-b602-4493555a40e8.png)
+![undefined](imgs/sourcestart/1527213111970-6a1b5031-63ef-4082-b602-4493555a40e8.png)
 
 ### 安装并启动 redis (本地默认配置)
 
@@ -24,19 +24,19 @@ git clone git@github.com:alibaba/tac.git
 
 * com.alibaba.tac.console.ConsoleApplication 带上 --admin 参数启动
 
-![undefined](/imgs/sourcestart/1527213201547-8d16dd54-d32a-4cd9-927a-4ceb509773a6.png)
+![undefined](imgs/sourcestart/1527213201547-8d16dd54-d32a-4cd9-927a-4ceb509773a6.png)
 
 * 成功后打开控制台 http://localhost:7001/#/tacMs/list
 
 ### 新建服务
 
-![undefined](/imgs/sourcestart/1527213265713-e0e7611f-b1c2-43bd-8cf5-31dd0d9e9cc6.png)
+![undefined](imgs/sourcestart/1527213265713-e0e7611f-b1c2-43bd-8cf5-31dd0d9e9cc6.png)
 
 ### 编写代码
 
 * 参考 tac-dev-source
 
-![undefined](/imgs/sourcestart/1527213324287-63726690-1df1-45fb-afc6-e931784855d1.png)
+![undefined](imgs/sourcestart/1527213324287-63726690-1df1-45fb-afc6-e931784855d1.png)
 
 ```java
 package com.alibaba.tac.biz.processor;
@@ -97,13 +97,13 @@ mvn clean -Dmaven.test.skip=true package
 
 ### 上传 jar 包
 
-![undefined](/imgs/sourcestart/1527213524357-bae645a8-d865-472d-a89d-c6660aeade07.png)
+![undefined](imgs/sourcestart/1527213524357-bae645a8-d865-472d-a89d-c6660aeade07.png)
 
 ### 预发布
 
 ### 预发布测试
 
-![undefined](/imgs/sourcestart/1527213630237-809d5801-c137-4e53-8709-3d4e772406df.png)
+![undefined](imgs/sourcestart/1527213630237-809d5801-c137-4e53-8709-3d4e772406df.png)
 
 ## 正式发布
 
@@ -113,4 +113,4 @@ mvn clean -Dmaven.test.skip=true package
 
 ### 控制台操作发布
 
-![undefined](/imgs/sourcestart/1527213761239-b3548ce2-6f0d-406d-af8b-1efaf688a45d.png)
+![undefined](imgs/sourcestart/1527213761239-b3548ce2-6f0d-406d-af8b-1efaf688a45d.png)
