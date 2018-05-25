@@ -3,7 +3,7 @@
     <parent>
         <artifactId>tac</artifactId>
         <groupId>com.alibaba</groupId>
-        <version>0.0.3</version>
+        <version>0.0.4</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
@@ -21,7 +21,7 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>tac-sdk</artifactId>
-            <version>0.0.3</version>
+            <version>0.0.4</version>
         </dependency>
 
     </dependencies>
