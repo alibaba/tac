@@ -172,3 +172,5 @@ curl  http://localhost:8001/api/tac/execute/helloworld -s|json
 ## [接入你自己的数据源](/docs/custom_data_source.md)
 
 ## [与gitlab集成](/docs/gitlab.md)
+
+## [IDE源码启动——quickstart](/docs/ide_source_start.md)
