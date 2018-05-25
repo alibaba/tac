@@ -5,7 +5,7 @@
 
     <groupId>com.alibaba</groupId>
     <artifactId>tac</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.4</version>
     <packaging>pom</packaging>
 
 
@@ -311,6 +311,11 @@
                                 <goals>
                                     <goal>jar</goal>
                                 </goals>
+                                <configuration>
+                                    <additionalOptions>
+                                        -Xdoclint:none
+                                    </additionalOptions>
+                                </configuration>
                             </execution>
                         </executions>
                     </plugin>
