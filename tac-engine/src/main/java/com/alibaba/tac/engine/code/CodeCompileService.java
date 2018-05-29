@@ -27,7 +27,6 @@ package com.alibaba.tac.engine.code;
 import com.alibaba.tac.engine.compile.IJdkCompiler;
 import com.alibaba.tac.engine.compile.InstCodeInfo;
 import com.alibaba.tac.engine.compile.JavaSourceCode;
-import com.alibaba.tac.engine.service.TacFileService;
 import com.alibaba.tac.engine.util.TacCompressUtils;
 import com.alibaba.tac.sdk.error.ErrorCode;
 import com.alibaba.tac.sdk.error.ServiceException;

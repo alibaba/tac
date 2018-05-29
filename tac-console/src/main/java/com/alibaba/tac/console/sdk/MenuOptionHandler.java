@@ -26,7 +26,7 @@ package com.alibaba.tac.console.sdk;
 
 import com.alibaba.tac.console.ConsoleConstants;
 import com.alibaba.tac.engine.code.CodeCompileService;
-import com.alibaba.tac.engine.service.TacFileService;
+import com.alibaba.tac.engine.code.TacFileService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections4.CollectionUtils;
 import org.springframework.boot.ApplicationArguments;
@@ -74,6 +74,7 @@ public class MenuOptionHandler {
         }
 
         if (arguments.containsOption(ConsoleConstants.MENU_PACKAGE)) {
+            System.out.println("handleo pacakge");
             handlePackage();
         }
 

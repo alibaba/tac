@@ -26,7 +26,7 @@ package com.alibaba.tac.engine.compile;
 
 import com.alibaba.tac.engine.bootlaucher.BootJarLaucherUtils;
 import com.alibaba.tac.engine.properties.TacDataPathProperties;
-import com.alibaba.tac.engine.service.TacFileService;
+import com.alibaba.tac.engine.code.TacFileService;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -99,6 +99,7 @@ public class ConsoleApplication implements CommandLineRunner {
         springApplication.addListeners(new ApplicationListener<ApplicationEnvironmentPreparedEvent>() {
             @Override
             public void onApplicationEvent(ApplicationEnvironmentPreparedEvent event) {
+
                 CodeLoadService.changeClassLoader(event.getEnvironment());
             }
         });

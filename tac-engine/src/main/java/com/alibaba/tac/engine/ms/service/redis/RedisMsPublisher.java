@@ -37,7 +37,7 @@ import com.alibaba.tac.engine.ms.service.AbstractDefaultMsPublisher;
 import com.alibaba.tac.engine.ms.service.IMsService;
 import com.alibaba.tac.engine.properties.TacMsConstants;
 import com.alibaba.tac.engine.properties.TacRedisConfigProperties;
-import com.alibaba.tac.engine.service.TacFileService;
+import com.alibaba.tac.engine.code.TacFileService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.data.redis.core.HashOperations;

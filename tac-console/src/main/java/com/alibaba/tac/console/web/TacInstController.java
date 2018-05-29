@@ -33,7 +33,7 @@ import com.alibaba.tac.engine.ms.domain.TacMsDO;
 import com.alibaba.tac.engine.ms.service.IMsPublisher;
 import com.alibaba.tac.engine.ms.service.IMsService;
 import com.alibaba.tac.engine.service.TacPublishTestService;
-import com.alibaba.tac.engine.service.TacFileService;
+import com.alibaba.tac.engine.code.TacFileService;
 import com.alibaba.tac.sdk.common.TacResult;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
