@@ -10,7 +10,7 @@
     <artifactId>tac-dev-source</artifactId>
     <packaging>jar</packaging>
 
-    <name>tac-dev-source</name>
+    <name>tac-dev-source-demo</name>
     <url>http://maven.apache.org</url>
 
     <properties>
@@ -23,7 +23,11 @@
             <artifactId>tac-sdk</artifactId>
             <version>0.0.4</version>
         </dependency>
-
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>tac-custom-datasource-demo</artifactId>
+            <version>0.0.4-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
 

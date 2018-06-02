@@ -7,10 +7,12 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>tac-custom-datasource</artifactId>
+    <version>0.0.4-SNAPSHOT</version>
+
+    <artifactId>tac-custom-datasource-demo</artifactId>
     <packaging>jar</packaging>
 
-    <name>tac-custom-datasource</name>
+    <name>tac-custom-datasource-demo</name>
     <url>http://maven.apache.org</url>
 
     <properties>
@@ -21,7 +23,7 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>tac-sdk</artifactId>
-            <version>${project.version}</version>
+            <version>0.0.4</version>
         </dependency>
     </dependencies>
 </project>
