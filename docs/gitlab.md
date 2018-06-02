@@ -36,8 +36,8 @@ tac.gitlab.config.basePath=/home/admin/tac/git_codes
 
 * 如下图所示，修改该微服务的仓库地址
 
-![gitlab_repo](/imgs/tac-gitlab1.png)
+![gitlab_repo](imgs/tac-gitlab1.png)
 
 ## Step 4 置顶实例分支并发布
 
-![gitlab_repo](/imgs/tac-gitlab3.png)
+![gitlab_repo](imgs/tac-gitlab3.png)
